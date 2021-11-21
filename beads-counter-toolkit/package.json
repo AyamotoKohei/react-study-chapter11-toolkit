@@ -1,8 +1,9 @@
 {
-  "name": "beads-counter",
+  "name": "beads-counter-toolkit",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.6.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.0",
     "@testing-library/user-event": "^13.2.1",
@@ -21,6 +22,7 @@
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3",
     "typescript": "^4.4.3",
+    "uuidv4": "^6.2.12",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
@@ -37,7 +39,7 @@
     "lint:conflict": "eslint-config-prettier 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:style": "stylelint 'src/**/*.{css,less,sass,scss}'",
     "lint:style:fix": "stylelint --fix 'src/**/*.{css,less,sass,scss}'",
-    "preinstall": "typesync || :"
+    "preinstall": "typesync || :",
   },
   "eslintConfig": {
     "extends": [
