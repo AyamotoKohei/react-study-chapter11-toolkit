@@ -2,7 +2,7 @@ import { VFC } from 'react';
 import { useSelector } from 'react-redux';
 
 import ColorfulBeads from 'components/molecules/ColorfulBeads';
-import { CounterState } from 'reducer';
+import { CounterState } from 'features/counter';
 
 const EnhancedColorfulBeads: VFC<{ count?: number }> = () => {
   const count = useSelector<CounterState, number>((state) => state.count);
